@@ -1,0 +1,16 @@
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+}
+
+.grid-item {
+    width: calc(100% / 16);
+    height: calc(100% / 16);
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.grid-item:hover{
+    background-color: random;
+}
