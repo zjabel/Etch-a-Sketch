@@ -1,4 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #a2e669;
+    font-family: "Orbitron", sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+#button-grid-configurator {
+    width: 50;
+    height: 50px;
+    border-radius: 12px;
+    background-color: transparent;
+    font-family: "Orbitron", sans-serif;
+}
+
 #grid-container {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     width: 800px;
@@ -8,9 +28,11 @@
 .grid-item {
     width: calc(100% / 16);
     height: calc(100% / 16);
-    border: 1px solid #ddd;
+    border: 1px solid black;
     box-sizing: border-box;
+    background-color: white;
 }
-.grid-item:hover{
+
+.grid-item:hover {
     background-color: random;
 }
