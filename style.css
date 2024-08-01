@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: #a2e669;
     font-family: "Orbitron", sans-serif;
     height: 100vh;
@@ -10,7 +9,7 @@ body {
 }
 
 #button-grid-configurator {
-    width: 50;
+    width: 100px;
     height: 50px;
     border-radius: 12px;
     background-color: transparent;
@@ -18,21 +17,19 @@ body {
 }
 
 #grid-container {
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     width: 800px;
     height: 800px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .grid-item {
-    width: calc(100% / 16);
-    height: calc(100% / 16);
-    border: 1px solid black;
     box-sizing: border-box;
+    border: 1px solid black;
     background-color: white;
+    flex: 0 0 auto;
 }
 
-.grid-item:hover {
-    background-color: random;
-}
